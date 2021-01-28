@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
-    <link rel="stylesheet" href="CSS/3style.css">
+    <title>Let's Talk!</title>
+    <link rel="stylesheet" href="CSS/9style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" 
     rel="stylesheet">
@@ -25,10 +25,43 @@
         </header>
      </div>
 
-    <h1>My Resume</h1>
-
-    <img src="../UX_UI_HW_18/images/Arielle Moore UXUI Resume.png" alt="png of Resume">
-
+    <h1>Let's Talk!</h1>
+    <br>
+    <h3>Want to collaborate? Talk employment? Give feedback?</h3>
+    <p>I'd love to connect. Fill in any thoughts and I'll get back to you.</p>
+   <br>
+   <br>
+   <br>
+   <section>
+    <div class="containerContact">
+        <form action="https://formspree.io/f/mleozyyv" method="POST" id="my-form">
+      
+          <label for="fname">Full Name</label>
+          <br>
+          <br>
+          <input type="text" id="fname" name="firstname" placeholder="Your name...">
+            <br>
+            <br>
+          <label for="lname">Email Address</label>
+          <br>
+          <br>
+          <input type="text" id="lname" name="lastname" placeholder="Your email address...">
+            <br>
+            <br>
+          <label for="subject">Message</label>
+          <br>
+          <br>
+          <textarea id="subject" name="subject" placeholder="Your message..." style="height:200px"></textarea>
+             <br>
+             <br>
+          <input type="submit" value="SUBMIT">
+      
+        </form>
+      </div>
+  <div id="status" class="success"></div>
+  <div id="status2" class="error"></div>
+</section>
+<script src="./main.js"></script>
 </body>
 
 <footer>
@@ -41,5 +74,4 @@
     </div>
    
 </footer>
-
 </html>
